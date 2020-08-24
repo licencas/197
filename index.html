@@ -19,7 +19,31 @@
 <body style="overflow-x: hidden;">
   <script type="text/javascript">
 
-    
+ 
+
+    setTimeout(
+      function(){ 
+        document.getElementById("txt").innerHTML="CALCULANDO NÚMERO DE LICENÇAS...";
+        setTimeout(
+          function(){ 
+            document.getElementById("txt").innerHTML="RESTAM 6 LICENÇAS..."; 
+          }, 1000
+        );
+      }, 500
+    );
+
+    setTimeout(
+      function(){ 
+        document.getElementById("txt").innerHTML="RESTAM 3 LICENÇAS...";
+        setTimeout(
+          function(){ 
+            document.getElementById("txt").innerHTML="SUA LICENÇA FOI RESERVADA COM SUCESSO"; 
+            window.location.href = "https://go.perfectpay.com.br/PPU38CK5UA6?split=12&src=3licencas";
+          }, 2000
+        );
+      }, 3000
+    );
+
           
   
   </script>
